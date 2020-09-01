@@ -1,16 +1,17 @@
 import React, { Component } from "react";
 import { Grid } from "react-bootstrap";
-import SketchBox from "components/SketchOne/index.js";
-
+import sketches from "./sketches.json";
 
 class Dashboard extends Component {
+  state = {
+    sketches: sketches,
+  };
+
   render() {
     return (
-      <div className="content">
-        <Grid fluid>
-          <SketchBox/>
-            
-        </Grid>
+      <div className="content" id="dash-1">
+        {console.log(this.state.sketches)}
+        <Grid fluid></Grid>
       </div>
     );
   }

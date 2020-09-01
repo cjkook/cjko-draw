@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Sketch One",
+    "image": "assets/img/sidebar.png",
+    "path": "/SketchOne"
+  },
+  {
+    "id": 2,
+    "name": "Sketch Two",
+    "image": "assets/img/sidebar.png",
+    "path": "/SketchTwo"
+  }
+]

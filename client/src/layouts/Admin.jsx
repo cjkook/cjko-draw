@@ -9,7 +9,7 @@ import Sidebar from "components/Sidebar/Sidebar";
 
 import routes from "routes.js";
 
-import image from "assets/img/sidebar-3.jpg";
+import image from "assets/img/sidebar2.png";
 
 class Admin extends Component {
   constructor(props) {

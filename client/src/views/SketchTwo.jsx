@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Grid } from "react-bootstrap";
-import Sketch from "components/Sketches/SketchOne/index.js";
+import Sketch from "components/Sketches/SketchTwo/index.js";
 
 class Dashboard extends Component {
   render() {
