@@ -1,30 +1,36 @@
 const db = require("../models");
+console.log(db)
 
-// Defining methods for the postsController
+// Defining methods for the paletteController
 module.exports = {
   findAll: function(req, res) {
-    db.Post.find(req.query)
+    console.log(req)
+    db.Palette.find(req.query)
       .sort({ date: -1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
   findById: function(req, res) {
-    db.Post.findById(req.params.id)
+    console.log(req)
+    db.Palette.findById(req.params.id)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
   create: function(req, res) {
-    db.Post.create(req.body)
+    console.log(req)
+    db.Palette.create(req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {
-    db.Post.findOneAndUpdate({ _id: req.params.id }, req.body)
+    console.log(req)
+    db.Palette.findOneAndUpdate({ _id: req.params.id }, req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
   remove: function(req, res) {
-    db.Post.findById({ _id: req.params.id })
+    console.log(req)
+    db.Palette.findById({ _id: req.params.id })
       .then(dbModel => dbModel.remove())
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));

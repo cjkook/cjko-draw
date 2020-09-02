@@ -9,6 +9,7 @@ export default {
   
   // Saves a post to the database
   savePalette: function(data) {
+    console.log('api post', data)
     return axios.post("/api/palettes", data);
   }
 };

@@ -1,13 +1,13 @@
 const router = require("express").Router();
 const controller = require("../../controllers/paletteController");
 
-// Matches with "/api/posts"
+// Matches with "/api/palettes"
 router
   .route("/")
   .get(controller.findAll)
   .post(controller.create);
 
-// Matches with "/api/posts/:id"
+// Matches with "/api/palettes/:id"
 router
   .route("/:id")
   .post(controller.create)

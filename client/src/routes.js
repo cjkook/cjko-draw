@@ -1,5 +1,6 @@
 import Dashboard from "views/Dashboard.jsx";
 import UserProfile from "views/UserProfile.jsx";
+import About from "views/About.jsx";
 import SketchOne from "views/SketchOne.jsx";
 import SketchTwo from "views/SketchTwo.jsx";
 
@@ -22,7 +23,7 @@ const dashboardRoutes = [
     path: "/about",
     name: "About",
     icon: "pe-7s-user",
-    component: UserProfile,
+    component: About,
     layout: "/admin"
   },
   {

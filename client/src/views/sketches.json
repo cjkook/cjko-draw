@@ -10,6 +10,30 @@
     "name": "Sketch Two",
     "image": "/client/assets/img/sidebar.png",
     "path": "/SketchTwo"
+  },
+  {
+    "id": 3,
+    "name": "Sketch One",
+    "image": "/client/assets/img/sidebar.png",
+    "path": "/SketchOne"
+  },
+  {
+    "id": 4,
+    "name": "Sketch Two",
+    "image": "/client/assets/img/sidebar.png",
+    "path": "/SketchTwo"
+  },
+  {
+    "id": 5,
+    "name": "Sketch One",
+    "image": "/client/assets/img/sidebar.png",
+    "path": "/SketchOne"
+  },
+  {
+    "id": 6,
+    "name": "Sketch Two",
+    "image": "/client/assets/img/sidebar.png",
+    "path": "/SketchTwo"
   }
   
 ]

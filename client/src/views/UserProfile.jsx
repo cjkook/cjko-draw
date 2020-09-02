@@ -3,13 +3,13 @@ import {
   Grid,
   Row,
   Col,
-  FormGroup,
-  ControlLabel,
-  FormControl,
+  // FormGroup,
+  // ControlLabel,
+  // FormControl,
 } from "react-bootstrap";
 import API from "../utils/API";
 import { Card } from "components/Card/Card.jsx";
-import Button from "components/CustomButton/CustomButton.jsx";
+// import Button from "components/CustomButton/CustomButton.jsx";
 import Form from "components/Form";
 
 class UserProfile extends Component {
@@ -62,7 +62,7 @@ class UserProfile extends Component {
   };
 
   render() {
-    console.log(this.state);
+    // console.log(this.state);
     return (
       <div className="content">
         <Grid>

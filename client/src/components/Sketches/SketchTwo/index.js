@@ -17,9 +17,7 @@ let lineCol = tempPalette.splice(1,tempPalette.length-1);
 function createCols(_url) {
   let slash_index = _url.lastIndexOf("/");
   let palette = _url.slice(slash_index + 1);
-  console.log(palette);
   let arr = palette.split("-");
-  console.log(arr);
   arr.map((item, i) => {
     arr[i] = "#" + arr[i];
   });
