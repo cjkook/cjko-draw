@@ -1,7 +1,7 @@
 const router = require("express").Router();
-const postRoutes = require("./posts");
+const paletteRoutes = require("./palette");
 
 // Post routes
-router.use("/posts", postRoutes);
+router.use("/palettes", paletteRoutes);
 
 module.exports = router;

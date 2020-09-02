@@ -9,7 +9,7 @@ import "./styles.css";
 // * SKETCH VARS
 const CYCLE = 300;
 const fnc = {};
-let temp = "https://coolors.co/ffece0-fa6000-737373-000000";
+let temp = "https://coolors.co/f4f1de-e07a5f-3d405b-81b29a-f2cc8f";
 let tempPalette = createCols(temp)
 let lineCol = tempPalette.splice(1,tempPalette.length-1);
 

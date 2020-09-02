@@ -55,8 +55,10 @@ class Admin extends Component {
     }
     return "cjko-draw";
   };
-  
+
+    
   componentDidUpdate(e) {
+    document.title = "cjko sketchbook"
     if (
       window.innerWidth < 993 &&
       e.history.location.pathname !== e.location.pathname &&
