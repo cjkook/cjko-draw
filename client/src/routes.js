@@ -10,14 +10,8 @@ const dashboardRoutes = [
     name: "Sketchbook",
     icon: "pe-7s-notebook",
     component: Dashboard,
-    layout: "/admin"
-  },
-  {
-    path: "/UserProfile",
-    name: "User",
-    icon: "pe-7s-user",
-    component: UserProfile,
-    layout: "/admin"
+    layout: "/admin",
+    image: require("assets/img/sidebar.png")
   },
   {
     path: "/about",
@@ -27,11 +21,18 @@ const dashboardRoutes = [
     layout: "/admin"
   },
   {
+    path: "/UserProfile",
+    name: "Palette",
+    icon: "pe-7s-paint-bucket",
+    component: UserProfile,
+    layout: "/admin"
+  },
+  {
     path: "/SketchOne",
     name: "Sketch One",
     icon: "pe-7s-note",
     component: SketchOne,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/SketchTwo",

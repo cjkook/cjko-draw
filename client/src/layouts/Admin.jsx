@@ -24,6 +24,7 @@ class Admin extends Component {
   }
   
   getRoutes = routes => {
+    // console.log(routes)
     return routes.map((prop, key) => {
       if (prop.layout === "/admin") {
         return (
@@ -32,7 +33,7 @@ class Admin extends Component {
             render={props => (
               <prop.component
                 {...props}
-                handleClick={this.handleNotificationClick}
+                // handleClick={this.handleNotificationClick}
               />
             )}
             key={key}

@@ -1,39 +1,32 @@
 [
   {
-    "id": 1,
     "name": "Sketch One",
     "image": "/client/assets/img/sidebar.png",
     "path": "/SketchOne"
   },
   {
-    "id": 2,
     "name": "Sketch Two",
     "image": "/client/assets/img/sidebar.png",
     "path": "/SketchTwo"
   },
   {
-    "id": 3,
-    "name": "Sketch One",
+    "name": "Sketch Three",
     "image": "/client/assets/img/sidebar.png",
-    "path": "/SketchOne"
+    "path": "/SketchThree"
   },
   {
-    "id": 4,
-    "name": "Sketch Two",
+    "name": "Sketch Four",
     "image": "/client/assets/img/sidebar.png",
-    "path": "/SketchTwo"
+    "path": "/SketchFour"
   },
   {
-    "id": 5,
-    "name": "Sketch One",
+    "name": "Sketch Five",
     "image": "/client/assets/img/sidebar.png",
-    "path": "/SketchOne"
+    "path": "/SketchFive"
   },
   {
-    "id": 6,
-    "name": "Sketch Two",
+    "name": "Sketch Six",
     "image": "/client/assets/img/sidebar.png",
-    "path": "/SketchTwo"
+    "path": "/SketchSix"
   }
-  
 ]
