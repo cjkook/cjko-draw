@@ -19,7 +19,6 @@ class Dashboard extends Component {
                 name={entry.name}
                 image={entry.image}
                 path={entry.path}
-                
               />
             </Col>
           ))}

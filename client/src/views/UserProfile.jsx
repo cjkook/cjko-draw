@@ -31,18 +31,18 @@ class UserProfile extends Component {
     // console.log(value);
     // console.log(e.target);
 
-    API.getPalette({
-      palette: this.state.colorPalettes[0],
-      // user:
-      // title: titleRef.current.value,
-      // body: bodyRef.current.value,
-      // author: authorRef.current.value,
-    })
-      .then((result) => {})
-      .catch((err) => console.log(err));
+    // API.getPalette({
+    //   palette: this.state.colorPalettes[0],
+    //   // user:
+    //   // title: titleRef.current.value,
+    //   // body: bodyRef.current.value,
+    //   // author: authorRef.current.value,
+    // })
+    //   .then((result) => {})
+    //   .catch((err) => console.log(err));
     API.savePalette({
-      palette: this.state.colorPalettes[0],
-      // user:
+      palette: value,
+      user: this.state.user
       // title: titleRef.current.value,
       // body: bodyRef.current.value,
       // author: authorRef.current.value,
@@ -73,7 +73,7 @@ class UserProfile extends Component {
                 content={
                   <form className="form">
                     <Form
-                      name="color 1"
+                      name="palette"
                       handleInputChange={this.handleInputChange}
                     />
                   </form>
