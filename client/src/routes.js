@@ -3,6 +3,7 @@ import UserProfile from "views/UserProfile.jsx";
 import About from "views/About.jsx";
 import SketchOne from "views/SketchOne.jsx";
 import SketchTwo from "views/SketchTwo.jsx";
+import SketchThree from "views/SketchThree.jsx";
 const dashboardRoutes = [
   {
     path: "/sketches",
@@ -37,6 +38,13 @@ const dashboardRoutes = [
     name: "Sketch Two",
     icon: "pe-7s-note",
     component: SketchTwo,
+    layout: "/admin"
+  },
+  {
+    path: "/SketchThree",
+    name: "Sketch Three",
+    icon: "pe-7s-note",
+    component: SketchThree,
     layout: "/admin"
   },
 

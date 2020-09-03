@@ -10,7 +10,6 @@ class Dashboard extends Component {
     super(props);
     this.state = {
       sketches: sketches,
-      testProps: this.props
     };
   }
   

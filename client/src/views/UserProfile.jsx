@@ -11,7 +11,7 @@ import API from "../utils/API";
 import { Card } from "components/Card/Card.jsx";
 // import Button from "components/CustomButton/CustomButton.jsx";
 import Form from "components/Form";
-// import LoginPage from "components/LoginPage"
+import LoginPage from "components/LoginPage/LoginPage"
 
 class UserProfile extends Component {
   state = {
@@ -44,7 +44,10 @@ class UserProfile extends Component {
       // body: bodyRef.current.value,
       // author: authorRef.current.value,
     })
-      .then((result) => {})
+      .then((result) => {
+        console.log(this.props)
+        this.props.testProp = value;
+      })
       .catch((err) => console.log(err));
 
     
@@ -63,6 +66,10 @@ class UserProfile extends Component {
     return (
       <div className="content">
         <Grid>
+        <Row>
+        {/* //! login logic */}
+          <LoginPage></LoginPage>
+        </Row>
           <Row>
             <Col md={12}>
               <Card

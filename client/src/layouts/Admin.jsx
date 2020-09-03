@@ -1,12 +1,10 @@
 import React, { Component, useState, useContext } from "react";
 import { Route, Switch } from "react-router-dom";
+import { Auth0Provider } from "@auth0/auth0-react";
 // import NotificationSystem from "react-notification-system";
-
 import AdminNavbar from "components/Navbars/AdminNavbar";
 // import Footer from "components/Footer/Footer";
 import Sidebar from "components/Sidebar/Sidebar";
-
-// sketches and sidebar links
 import routes from "routes.js";
 
 // sidebar image
@@ -14,6 +12,13 @@ import image from "assets/img/sidebar2.png";
 
 // user context
 import UserContext from "../utils/UserContext";
+
+// auth0
+const domainUrl = process.env.REACT_APP_AUTH0_DOMAIN;
+const clientID = process.env.REACT_APP_AUTH0_CLIENT_ID;
+const redirectUri =
+  process.env.REDIRECT_URI || "https://localhost:3000";
+
 
 class Admin extends Component {
   constructor(props) {
@@ -26,7 +31,7 @@ class Admin extends Component {
       fixedClasses: "dropdown show-dropdown open",
       name: "",
       email: "",
-      palette: "",
+      palette: "https://coolors.co/f4f1de-e07a5f-3d405b-81b29a-f2cc8f",
       loggedIn: false,
     };
   }
@@ -42,7 +47,7 @@ class Admin extends Component {
               <prop.component
                 {...props}
                 // handleClick={this.handleNotificationClick}
-                testProp={this.state.fixedClasses}
+                testProp={this.state.palette}
               />
             )}
             key={key}
@@ -97,9 +102,15 @@ class Admin extends Component {
             {...this.props}
             brandText={this.getBrandText(this.props.location.pathname)}
           />
-          <UserContext.Provider value={this.state}>
-            <Switch>{this.getRoutes(routes)} </Switch>
-          </UserContext.Provider>
+          <Auth0Provider
+            domain={domainUrl}
+            client={clientID}
+            redirectUri={redirectUri}
+          >
+            <UserContext.Provider value={this.state}>
+              <Switch>{this.getRoutes(routes)} </Switch>
+            </UserContext.Provider>
+          </Auth0Provider>
         </div>
       </div>
     );

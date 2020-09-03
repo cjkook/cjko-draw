@@ -13,10 +13,11 @@ class Dashboard extends Component {
     // import Sketch from ("components/Sketches/" + fileName);
   }
   render() {
+    console.log(this.props)
     return (
       <div className="content">
         <Grid fluid>
-          <Sketch />
+          <Sketch paletteUrl={this.props} />
         </Grid>
       </div>
     );
