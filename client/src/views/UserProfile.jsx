@@ -16,7 +16,6 @@ import Form from "components/Form";
 class UserProfile extends Component {
   state = {
     user: {}, // ! 
-    colorPalettes: ["https://coolors.co/f4f1de-e07a5f-3d405b-81b29a-f2cc8f"],
   };
 
   // When this component mounts

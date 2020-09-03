@@ -3,13 +3,20 @@ import { Grid, Row, Col } from "react-bootstrap";
 import sketches from "../sketches.json";
 import ProjCard from "components/ProjCard";
 import img1 from "assets/img/sketch2.png";
+
 const images = [img1]
 class Dashboard extends Component {
-  state = {
-    sketches: sketches,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      sketches: sketches,
+      testProps: this.props
+    };
+  }
+  
 
   render() {
+    console.log(this.props)
     return (
       <div className="content">
         <Row>

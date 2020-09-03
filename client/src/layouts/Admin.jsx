@@ -42,6 +42,7 @@ class Admin extends Component {
               <prop.component
                 {...props}
                 // handleClick={this.handleNotificationClick}
+                testProp={this.state.fixedClasses}
               />
             )}
             key={key}
@@ -97,7 +98,7 @@ class Admin extends Component {
             brandText={this.getBrandText(this.props.location.pathname)}
           />
           <UserContext.Provider value={this.state}>
-            <Switch>{this.getRoutes(routes)}</Switch>
+            <Switch>{this.getRoutes(routes)} </Switch>
           </UserContext.Provider>
         </div>
       </div>
