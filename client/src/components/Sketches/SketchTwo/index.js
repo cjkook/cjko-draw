@@ -1,48 +1,50 @@
-import React from "react";
+import React, { useContext } from "react";
 import Sketch from "react-p5";
 import "./styles.css";
-// import fnc from "./functions.js";
+import UserContext from "../../../utils/UserContext";
+import fnc from "../functions";
 // import "./class.js";
 
 // * AUTHOR: Sayama (https://www.openprocessing.org/user/159668)
 
 // * SKETCH VARS
 const CYCLE = 300;
-const fnc = {};
-let temp = "https://coolors.co/f4f1de-e07a5f-3d405b-81b29a-f2cc8f";
-let tempPalette = createCols(temp)
-let lineCol = tempPalette.splice(1,tempPalette.length-1);
+const palette = "https://coolors.co/ef476f-ffd166-06d6a0-118ab2-073b4c";
+// user context
+// const { palette } =
+// useContext(UserContext) ||
+// "https://coolors.co/ef476f-ffd166-06d6a0-118ab2-073b4c";
 
-// ! create palette, needs to be moved
-function createCols(_url) {
-  let slash_index = _url.lastIndexOf("/");
-  let palette = _url.slice(slash_index + 1);
-  let arr = palette.split("-");
-  arr.map((item, i) => {
-    arr[i] = "#" + arr[i];
-  });
+let tempPalette = fnc.createCols(palette);
+let lineCol = tempPalette.splice(1, tempPalette.length - 1);
 
-  return arr;
-}
+
+// function ThemedButton() {
+//   const theme = useContext(ThemeContext);
+//   return (
+//     <button style={{ background: theme.background, color: theme.foreground }}>
+//       I am styled by theme context!
+//     </button>
+//   );
+// }
+// context consumers 
+
+
 
 class SketchBox extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { 
-      palette: createCols(temp)
-     };
+    // this.state = {};
   }
   _onMouseMove(e) {
     this.setState({ x: e.nativeEvent.offsetX, y: e.nativeEvent.offsetY });
   }
-  state = {};
-  y = 0;
-  direction = "^";
 
   // When this component mounts
   componentDidMount() {}
 
   render() {
+    
     return (
       <div onMouseMove={this._onMouseMove.bind(this)}>
         <Sketch
@@ -117,7 +119,6 @@ class SketchBox extends React.Component {
           }}
           ///////////////////////
           mousePressed={() => {
-            console.log("mouse");
           }}
         />
       </div>

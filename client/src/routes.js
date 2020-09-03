@@ -3,7 +3,6 @@ import UserProfile from "views/UserProfile.jsx";
 import About from "views/About.jsx";
 import SketchOne from "views/SketchOne.jsx";
 import SketchTwo from "views/SketchTwo.jsx";
-
 const dashboardRoutes = [
   {
     path: "/sketches",
@@ -11,7 +10,6 @@ const dashboardRoutes = [
     icon: "pe-7s-notebook",
     component: Dashboard,
     layout: "/admin",
-    image: require("assets/img/sidebar.png")
   },
   {
     path: "/about",

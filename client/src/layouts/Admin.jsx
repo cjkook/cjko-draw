@@ -1,5 +1,4 @@
-
-import React, { Component } from "react";
+import React, { Component, useState, useContext } from "react";
 import { Route, Switch } from "react-router-dom";
 // import NotificationSystem from "react-notification-system";
 
@@ -7,9 +6,14 @@ import AdminNavbar from "components/Navbars/AdminNavbar";
 // import Footer from "components/Footer/Footer";
 import Sidebar from "components/Sidebar/Sidebar";
 
+// sketches and sidebar links
 import routes from "routes.js";
 
+// sidebar image
 import image from "assets/img/sidebar2.png";
+
+// user context
+import UserContext from "../utils/UserContext";
 
 class Admin extends Component {
   constructor(props) {
@@ -19,18 +23,22 @@ class Admin extends Component {
       image: image,
       color: "black",
       hasImage: true,
-      fixedClasses: "dropdown show-dropdown open"
+      fixedClasses: "dropdown show-dropdown open",
+      name: "",
+      email: "",
+      palette: "",
+      loggedIn: false,
     };
   }
-  
-  getRoutes = routes => {
+
+  getRoutes = (routes) => {
     // console.log(routes)
     return routes.map((prop, key) => {
       if (prop.layout === "/admin") {
         return (
           <Route
             path={prop.layout + prop.path}
-            render={props => (
+            render={(props) => (
               <prop.component
                 {...props}
                 // handleClick={this.handleNotificationClick}
@@ -44,7 +52,7 @@ class Admin extends Component {
       }
     });
   };
-  getBrandText = path => {
+  getBrandText = (path) => {
     for (let i = 0; i < routes.length; i++) {
       if (
         this.props.location.pathname.indexOf(
@@ -57,9 +65,8 @@ class Admin extends Component {
     return "cjko-draw";
   };
 
-    
   componentDidUpdate(e) {
-    document.title = "cjko sketchbook"
+    document.title = "cjko sketchbook";
     if (
       window.innerWidth < 993 &&
       e.history.location.pathname !== e.location.pathname &&
@@ -77,15 +84,21 @@ class Admin extends Component {
     return (
       <div className="wrapper">
         {/* <NotificationSystem ref="notificationSystem" style={style} /> */}
-        <Sidebar {...this.props} routes={routes} image={this.state.image}
-        color={this.state.color}
-        hasImage={this.state.hasImage}/>
+        <Sidebar
+          {...this.props}
+          routes={routes}
+          image={this.state.image}
+          color={this.state.color}
+          hasImage={this.state.hasImage}
+        />
         <div id="main-panel" className="main-panel" ref="mainPanel">
           <AdminNavbar
             {...this.props}
             brandText={this.getBrandText(this.props.location.pathname)}
           />
-          <Switch>{this.getRoutes(routes)}</Switch>
+          <UserContext.Provider value={this.state}>
+            <Switch>{this.getRoutes(routes)}</Switch>
+          </UserContext.Provider>
         </div>
       </div>
     );

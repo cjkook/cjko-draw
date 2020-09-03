@@ -3,7 +3,7 @@ import { Grid, Row, Col } from "react-bootstrap";
 import sketches from "../sketches.json";
 import ProjCard from "components/ProjCard";
 import img1 from "assets/img/sketch2.png";
-
+const images = [img1]
 class Dashboard extends Component {
   state = {
     sketches: sketches,
@@ -17,7 +17,7 @@ class Dashboard extends Component {
             <Col lg={4} sm={6} key={i}>
               <ProjCard
                 name={entry.name}
-                image={entry.image}
+                image={images[i] || images[0]}
                 path={entry.path}
               />
             </Col>
