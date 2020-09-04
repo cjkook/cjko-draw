@@ -7,7 +7,7 @@ import {
   // ControlLabel,
   // FormControl,
 } from "react-bootstrap";
-import API from "../utils/API";
+
 import { Card } from "components/Card/Card.jsx";
 // import Button from "components/CustomButton/CustomButton.jsx";
 import Form from "components/Form";
@@ -23,46 +23,9 @@ class UserProfile extends Component {
     // this.setState({ });
   }
 
-  handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
-    e.preventDefault();
-    const { name, value } = e.target;
-
-    // API.getPalette({
-    //   palette: this.state.colorPalettes[0],
-    //   // user:
-    //   // title: titleRef.current.value,
-    //   // body: bodyRef.current.value,
-    //   // author: authorRef.current.value,
-    // })
-    //   .then((result) => {})
-    //   .catch((err) => console.log(err)); 
-    API.savePalette({
-      palette: value,
-      // user: this.state.user || "testUser" // !
-      // title: titleRef.current.value,
-      // body: bodyRef.current.value,
-      // author: authorRef.current.value,
-    })
-      .then((result) => {
-        console.log(this.props)
-        this.props.testProp = value;
-      })
-      .catch((err) => console.log(err));
-
-    
-    // Updating the input's state
-    // * match up name attribute to state property
-    this.setState(
-      {
-        [name]: value,
-      },
-      // console.log(this.state)
-    );
-  };
+  
 
   render() {
-    // console.log(this.state);
     return (
       <div className="content">
         <Grid>
@@ -78,7 +41,7 @@ class UserProfile extends Component {
                   <form className="form">
                     <Form
                       name="palette"
-                      handleInputChange={this.handleInputChange}
+                      handleInputChange={this.props.handleInputChange}
                     />
                   </form>
                 }

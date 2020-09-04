@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import Sketch from "react-p5";
+import p5 from 'p5';
 import "./styles.css";
 import fnc from "../functions";
 
@@ -8,14 +9,11 @@ import fnc from "../functions";
 //* PALETTE VARS
 let palette = "";
 // * SKETCH VARS
-// user context
-// const { palette } =
-// useContext(UserContext) ||
-// "https://coolors.co/ef476f-ffd166-06d6a0-118ab2-073b4c";
+
 
 export default (props) => {
   const setup = (p5, parentRef) => {
-    palette = fnc.createCols(props.paletteUrl.testProp);
+    palette = fnc.createCols(props.paletteUrl);
 
     fnc.bendLineTwoSide = function (radius, length) {
       fnc.bendedLine(radius, length);
@@ -62,7 +60,7 @@ export default (props) => {
     p5.rotateX(-p5.PI / 6);
     p5.rotateY(-p5.PI / 6);
 
-    const cycle = 100;
+    const cycle = 250;
     let frameRatio = (p5.frameCount % cycle) / cycle;
     let size = p5.min(p5.width, p5.height) * 0.75;
     let vSphRadius = size / 6;

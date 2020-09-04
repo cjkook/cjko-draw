@@ -8,7 +8,7 @@ function EmpCard(props) {
     <div className="card">
       <div className="img-container">
         {/* <Link to={"/admin"+props.path}><img alt={props.name} src={props.image} /></Link> */}
-        <img alt={props.name} src={props.image} />
+        <img alt={props.name} src={props.image} to={"/admin"+props.path} />
       </div>
       <Link to={"/admin"+props.path}><div>{props.name}</div></Link>
       

@@ -6,16 +6,12 @@ import fnc from "../functions";
 
 // * AUTHOR: Sayama (https://www.openprocessing.org/user/159668)
 
-// * SKETCH VARS
-const CYCLE = 300;
+//* PALETTE VARS
 let palette = "";
-// user context
-// const { palette } =
-// useContext(UserContext) ||
-// "https://coolors.co/ef476f-ffd166-06d6a0-118ab2-073b4c";
-
 let tempPalette
 let lineCol
+// * SKETCH VARS
+const CYCLE = 300;
 
 class SketchBox extends React.Component {
   constructor(props) {
@@ -28,8 +24,8 @@ class SketchBox extends React.Component {
 
   // When this component mounts
   componentDidMount() {
-    console.log(this.props.paletteUrl.testProp);
-    palette = this.props.paletteUrl.testProp;
+    console.log(this.props.paletteUrl);
+    palette = this.props.paletteUrl;
     tempPalette = fnc.createCols(palette);
     lineCol = tempPalette.splice(1, tempPalette.length - 1);
   }
@@ -58,7 +54,7 @@ class SketchBox extends React.Component {
               const span = w / vertNum;
 
               if (isStroke) p5.beginShape();
-              else p5.beginShape(p5.TRIANGLE_STRIP);
+              else p5.beginShape(p5.QUAD_STRIP);
               for (let x = -w / 2; x <= w / 2; x += span) {
                 let radOffset = p5.map(x, -w / 2, w / 2, 0, p5.TAU * 2);
                 let maxWaveH = h * 0.5 * waveHeightRatio;
