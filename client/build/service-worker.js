@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cjkook/cjko-draw/precache-manifest.4a05d4c2cac1f284f09289e467600b8b.js"
+  "/cjkook/cjko-draw/precache-manifest.5d7f19b80e1072800d2a91da0ffbab3d.js"
 );
 
 self.addEventListener('message', (event) => {
