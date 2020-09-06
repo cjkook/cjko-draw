@@ -1,7 +1,6 @@
-import React, { useContext } from "react";
+import React from "react";
 import Sketch from "react-p5";
 import "./styles.css";
-import UserContext from "../../../utils/UserContext";
 import fnc from "../functions";
 
 // * AUTHOR: Sayama (https://www.openprocessing.org/user/159668)

@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/cjkook/cjko-draw/static/css/main.48e50b29.chunk.css",
+    "main.js": "/cjkook/cjko-draw/static/js/main.7cf3ad29.chunk.js",
+    "main.js.map": "/cjkook/cjko-draw/static/js/main.7cf3ad29.chunk.js.map",
+    "runtime~main.js": "/cjkook/cjko-draw/static/js/runtime~main.01022db2.js",
+    "runtime~main.js.map": "/cjkook/cjko-draw/static/js/runtime~main.01022db2.js.map",
+    "static/css/2.bb4ba17c.chunk.css": "/cjkook/cjko-draw/static/css/2.bb4ba17c.chunk.css",
+    "static/js/2.1f6d1ae9.chunk.js": "/cjkook/cjko-draw/static/js/2.1f6d1ae9.chunk.js",
+    "static/js/2.1f6d1ae9.chunk.js.map": "/cjkook/cjko-draw/static/js/2.1f6d1ae9.chunk.js.map",
+    "index.html": "/cjkook/cjko-draw/index.html",
+    "precache-manifest.4a05d4c2cac1f284f09289e467600b8b.js": "/cjkook/cjko-draw/precache-manifest.4a05d4c2cac1f284f09289e467600b8b.js",
+    "service-worker.js": "/cjkook/cjko-draw/service-worker.js",
+    "static/css/2.bb4ba17c.chunk.css.map": "/cjkook/cjko-draw/static/css/2.bb4ba17c.chunk.css.map",
+    "static/css/main.48e50b29.chunk.css.map": "/cjkook/cjko-draw/static/css/main.48e50b29.chunk.css.map",
+    "static/media/pe-icon-7-stroke.css": "/cjkook/cjko-draw/static/media/Pe-icon-7-stroke.c45f7de0.svg",
+    "static/media/face-3.jpg": "/cjkook/cjko-draw/static/media/face-3.ce7a6b79.jpg",
+    "static/media/sidebar.png": "/cjkook/cjko-draw/static/media/sidebar.4203ac4d.png",
+    "static/media/sidebar2.png": "/cjkook/cjko-draw/static/media/sidebar2.05e6aaf3.png",
+    "static/media/sketch2.png": "/cjkook/cjko-draw/static/media/sketch2.a3ae4b57.png",
+    "static/media/sketch3.png": "/cjkook/cjko-draw/static/media/sketch3.82fdb8bf.png"
+  }
+}

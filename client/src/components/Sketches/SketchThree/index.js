@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import Sketch from "react-p5";
-import p5 from 'p5';
 import "./styles.css";
 import fnc from "../functions";
 
@@ -9,7 +8,6 @@ import fnc from "../functions";
 //* PALETTE VARS
 let palette = "";
 // * SKETCH VARS
-
 
 export default (props) => {
   const setup = (p5, parentRef) => {

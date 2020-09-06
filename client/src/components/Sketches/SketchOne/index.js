@@ -1,7 +1,6 @@
 import React from "react";
 import Sketch from "react-p5";
 import "./styles.css";
-import { createCommaList } from "typescript";
 
 let temp = "https://coolors.co/ef476f-ffd166-06d6a0-118ab2-073b4c";
 
