@@ -8,13 +8,12 @@ import {
   FormControl,
 } from "react-bootstrap";
 
-import { FormInputs } from "components/FormInputs/FormInputs.jsx";
 import { UserCard } from "components/UserCard/UserCard.jsx";
 import Button from "components/CustomButton/CustomButton.jsx";
 
 import avatar from "assets/img/faces/face-3.jpg";
 
-class UserProfile extends Component {
+class About extends Component {
   state = {};
 
   // When this component mounts
@@ -112,7 +111,7 @@ class UserProfile extends Component {
   }
 }
 
-export default UserProfile;
+export default About;
 
 
 // <UserCard

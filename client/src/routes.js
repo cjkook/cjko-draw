@@ -1,5 +1,5 @@
 import Dashboard from "views/Dashboard.jsx";
-import UserProfile from "views/UserProfile.jsx";
+import UserPalette from "views/UserPalette.jsx";
 import About from "views/About.jsx";
 import SketchOne from "views/SketchOne.jsx";
 import SketchTwo from "views/SketchTwo.jsx";
@@ -20,10 +20,10 @@ const dashboardRoutes = [
     layout: "/admin"
   },
   {
-    path: "/UserProfile",
+    path: "/UserPalette",
     name: "Palette",
     icon: "pe-7s-paint-bucket",
-    component: UserProfile,
+    component: UserPalette,
     layout: "/admin"
   },
   {

@@ -13,7 +13,7 @@ import { Card } from "components/Card/Card.jsx";
 import Form from "components/Form";
 import LoginPage from "components/LoginPage/LoginPage"
 
-class UserProfile extends Component {
+class UserPalette extends Component {
   state = {
     user: {}, // ! 
   };
@@ -54,4 +54,4 @@ class UserProfile extends Component {
   }
 }
 
-export default UserProfile;
+export default UserPalette;
