@@ -4,7 +4,7 @@ import About from "views/About.jsx";
 import SketchOne from "views/SketchOne.jsx";
 import SketchTwo from "views/SketchTwo.jsx";
 import SketchThree from "views/SketchThree.jsx";
-const dashboardRoutes = [
+const routes = [
   {
     path: "/sketches",
     name: "Sketchbook",
@@ -50,4 +50,4 @@ const dashboardRoutes = [
 
 ];
 
-export default dashboardRoutes;
+export default routes;
