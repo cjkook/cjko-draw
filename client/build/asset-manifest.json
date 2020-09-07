@@ -1,24 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.4b36417c.chunk.css",
-    "main.js": "/static/js/main.72f966ad.chunk.js",
-    "main.js.map": "/static/js/main.72f966ad.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/css/2.0ce8856a.chunk.css": "/static/css/2.0ce8856a.chunk.css",
-    "static/js/2.ca4ddb3d.chunk.js": "/static/js/2.ca4ddb3d.chunk.js",
-    "static/js/2.ca4ddb3d.chunk.js.map": "/static/js/2.ca4ddb3d.chunk.js.map",
+    "main.css": "/static/css/main.fb874504.chunk.css",
+    "main.js": "/static/js/main.9c279f24.chunk.js",
+    "main.js.map": "/static/js/main.9c279f24.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.da9354f3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.da9354f3.js.map",
+    "static/css/2.c9a2178a.chunk.css": "/static/css/2.c9a2178a.chunk.css",
+    "static/js/2.26f129fa.chunk.js": "/static/js/2.26f129fa.chunk.js",
+    "static/js/2.26f129fa.chunk.js.map": "/static/js/2.26f129fa.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b172f8cb5d09dc76954788fe07e79587.js": "/precache-manifest.b172f8cb5d09dc76954788fe07e79587.js",
+    "precache-manifest.8b4146dfa19d6978e4de569a500e4c84.js": "/precache-manifest.8b4146dfa19d6978e4de569a500e4c84.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.0ce8856a.chunk.css.map": "/static/css/2.0ce8856a.chunk.css.map",
-    "static/css/main.4b36417c.chunk.css.map": "/static/css/main.4b36417c.chunk.css.map",
+    "static/css/2.c9a2178a.chunk.css.map": "/static/css/2.c9a2178a.chunk.css.map",
+    "static/css/main.fb874504.chunk.css.map": "/static/css/main.fb874504.chunk.css.map",
+    "static/js/2.26f129fa.chunk.js.LICENSE.txt": "/static/js/2.26f129fa.chunk.js.LICENSE.txt",
     "static/media/pe-icon-7-stroke.css": "/static/media/Pe-icon-7-stroke.c45f7de0.svg",
     "static/media/face-3.jpg": "/static/media/face-3.ce7a6b79.jpg",
     "static/media/bootstrap.min.css": "/static/media/glyphicons-halflings-regular.fa277232.woff",
     "static/media/sidebar.png": "/static/media/sidebar.4203ac4d.png",
-    "static/media/sidebar2.png": "/static/media/sidebar2.05e6aaf3.png",
     "static/media/sketch2.png": "/static/media/sketch2.a3ae4b57.png",
     "static/media/sketch3.png": "/static/media/sketch3.82fdb8bf.png"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.da9354f3.js",
+    "static/css/2.c9a2178a.chunk.css",
+    "static/js/2.26f129fa.chunk.js",
+    "static/css/main.fb874504.chunk.css",
+    "static/js/main.9c279f24.chunk.js"
+  ]
 }
