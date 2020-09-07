@@ -9,7 +9,7 @@ import routes from "routes.js";
 import API from "../utils/API";
 
 // sidebar image
-// import image from "assets/img/sidebar2.png";
+import image from "assets/img/sidebar2.png";
 
 // user context
 import UserContext from "../utils/UserContext";
@@ -24,7 +24,7 @@ class Admin extends Component {
     super(props);
     this.state = {
       _notificationSystem: null,
-      // image: image,
+      image: image,
       color: "black",
       hasImage: true,
       fixedClasses: "dropdown show-dropdown open",
