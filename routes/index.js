@@ -9,7 +9,7 @@ router.use("/api", apiRoutes);
 router.use(function(req, res) {
   console.log(req.originalUrl, /get/i.test(req.method), req.accepts('html'));
   if (process.env.NODE_ENV==="production" && /get/i.test(req.method) && req.accepts('html')) {
-    return res.sendFile(path.join(__dirname, '../../client/build/index.html'), (err) => {
+    return res.sendFile(path.resolve(__dirname, '../../client/build/index.html'), (err) => {
       console.log('404 failed to serve index.html -', err);
       res.send('index not found');
     });
