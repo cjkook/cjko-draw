@@ -13,20 +13,5 @@
     "name": "Sketch Three",
     "image": "assets/img/sketch3.png",
     "path": "/SketchThree"
-  },
-  {
-    "name": "Sketch Four",
-    "image": "assets/img/sidebar.png",
-    "path": "/SketchFour"
-  },
-  {
-    "name": "Sketch Five",
-    "image": "assets/img/sidebar.png",
-    "path": "/SketchFive"
-  },
-  {
-    "name": "Sketch Six",
-    "image": "assets/img/sidebar.png",
-    "path": "/SketchSix"
   }
 ]

@@ -10,7 +10,7 @@ let palette = "";
 let tempPalette
 let lineCol
 // * SKETCH VARS
-const CYCLE = 300;
+const CYCLE = 400;
 
 class SketchBox extends React.Component {
   constructor(props) {

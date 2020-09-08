@@ -3,6 +3,11 @@ import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useAuth0 } from "@auth0/auth0-react";
 
+// auth0
+const domainUrl = process.env.REACT_APP_AUTH0_DOMAIN;
+const clientID = process.env.REACT_APP_AUTH0_CLIENT_ID;
+const redirectUri = process.env.REDIRECT_URI || "https://localhost:3000";
+
 const LoginPage = () => {
   const { loginWithRedirect } = useAuth0();
   return (
@@ -24,7 +29,11 @@ const LoginPage = () => {
         })}
         onSubmit={({ username, password }, { setStatus, setSubmitting }) => {
           //   setStatus();
-          loginWithRedirect();
+          loginWithRedirect(
+            domainUrl,
+            clientID,
+            redirectUri
+          );
         }}
         render={({ errors, status, touched, isSubmitting }) => (
           <Form>
@@ -80,14 +89,5 @@ const LoginPage = () => {
     </div>
   );
 };
-// class LoginPage extends React.Component {
-//     constructor(props) {
-//         super(props);
-//     }
-//
-//     render() {
-
-//     }
-// }
 
 export default LoginPage;

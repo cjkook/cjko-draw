@@ -7,7 +7,7 @@ class Dashboard extends Component {
     return (
       <div className="content">
         <Grid fluid>
-          <Sketch />
+          <Sketch paletteUrl={this.props.palette} />
         </Grid>
       </div>
     );

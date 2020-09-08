@@ -7,7 +7,6 @@ router.use("/api", apiRoutes);
 
 // If no API routes are hit, send the React app
 router.use(function(req, res) {
-  console.log(req.originalUrl, /get/i.test(req.method), req.accepts('html'));
   if (process.env.NODE_ENV==="production" && /get/i.test(req.method) && req.accepts('html')) {
     return res.sendFile(path.resolve(__dirname, '../client/build/index.html'), (err) => {
       if (err) {
